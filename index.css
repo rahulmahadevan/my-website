@@ -142,9 +142,20 @@ TIMELINE CSS STARTS HERE
 
 */
 
+.certs {
+  margin-top: 555px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.certs > img {
+  margin-left: 5%;
+  width: 18%;
+  
+}
 
 .timeline{
-   margin-top: 550px;
+   margin-top: 1px;
    padding: 30px 0;
    font-family: 'Roboto', sans-serif;
    background: #F1F2F6;
