@@ -142,18 +142,23 @@ TIMELINE CSS STARTS HERE
 
 */
 
-.certs {
-  margin-top: 555px;
-  margin-bottom: 5px;
+.certs-container {
+  margin-top: 560px;
+  margin-bottom: 10px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
-
-.certs > img {
+.certs-container > a {
+  width: 18%;
+  text-align: center;
   margin-left: 2.5%;
   margin-right: 2.5%;
-  width: 18%;
-  
+}
+.cert-img {
+  width: 100%;
+  height: 100%;
 }
 
 .timeline{
