@@ -20,14 +20,7 @@
       
       </div>
 	</div>
-
-
-   <div class="aboutme">
-      <h1>About</h1>
-      <p>Using packages here is powered by Skypack, which makes packages from npm not only available on a CDN, but prepares them for native JavaScript ES6 import usage. All packages are different, so refer to their docs for how they work. If you're using React / ReactDOM, make sure to turn on Babel for the JSX processing.Using packages here is powered by Skypack, which makes packages from npm not only available on a CDN, but prepares them for native JavaScript ES6 import usage. All packages are different, so refer to their docs for how they work. If you're using React / ReactDOM, make sure to turn on Babel for the JSX processing.
-</p>
-   </div>
-
+	
  
 	<div class="timeline">
 		
