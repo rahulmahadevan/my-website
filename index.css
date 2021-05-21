@@ -152,7 +152,7 @@ TIMELINE CSS STARTS HERE
 }
 
 .certs-container > a {
-  width: 18%;
+  width: 12%;
   text-align: center;
   margin-left: 2.5%;
   margin-right: 2.5%;
@@ -273,6 +273,33 @@ TIMELINE CSS STARTS HERE
 
 
 @media screen and (max-width: 768px) {
+
+  .certs-container {
+  margin-top: 560px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certs-container > a {
+  width: 18%;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.certs-container>a:hover {
+  -webkit-transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.cert-img {
+  width: 100%;
+  height: 100%;
+}
+
    .container:before {
       left: 8px;
       width: 2px;
