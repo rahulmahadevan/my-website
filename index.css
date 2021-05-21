@@ -150,12 +150,19 @@ TIMELINE CSS STARTS HERE
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .certs-container > a {
   width: 18%;
   text-align: center;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
+.certs-container>a:hover {
+  -webkit-transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
 .cert-img {
   width: 100%;
   height: 100%;
