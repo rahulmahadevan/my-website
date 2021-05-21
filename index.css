@@ -141,15 +141,10 @@
 TIMELINE CSS STARTS HERE
 
 */
-.aboutme {
-  margin-top: 550px;
-  background-color: #3E7CB1;
-}
-
 
 
 .timeline{
-   margin-top: 1px;
+   margin-top: 550px;
    padding: 30px 0;
    font-family: 'Roboto', sans-serif;
    background: #F1F2F6;
