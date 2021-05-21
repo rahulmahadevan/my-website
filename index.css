@@ -146,6 +146,7 @@ TIMELINE CSS STARTS HERE
   margin-top: 555px;
   margin-bottom: 5px;
   display: flex;
+  justify-content: center;
 }
 
 .certs > img {
