@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<div class="image-container">s
+	<div class="image-container">
 		
       <img src="cover.jpg" id="cover-image">
 		
