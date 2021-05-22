@@ -9,6 +9,7 @@
    -moz-box-sizing: border-box;
    box-sizing: border-box;
    outline: none;
+   font-family: 'Josefin Sans', sans-serif;
 }
 
 .image-container {
@@ -135,15 +136,59 @@
 /* Skills CSS */
 
 
-/* Skills CSS END /*
+/* Skills CSS END */
 
-/*
-TIMELINE CSS STARTS HERE
+.about-me {
+  margin-top: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #CFD8DC;
+}
 
-*/
+.about-me>h1{
+  margin-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  margin-right: 5%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 200%;
+  cursor: pointer;
+}
+
+.about-me>h1:hover {
+  -webkit-transition: transform 0.3s ease-in-out;
+  transform: scale(1.5);
+}
+
+.skills:hover + p {
+  visibility: visible;
+}
+
+.skills + p {
+  visibility: hidden;
+  font-size: 40%;
+  text-align: center;
+}
+
+.about-me>p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.skills {
+  text-decoration: none;
+  color: black;
+}
+
 
 .certs-container {
-  margin-top: 560px;
+  margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
@@ -168,114 +213,12 @@ TIMELINE CSS STARTS HERE
   height: 100%;
 }
 
-.timeline{
-   margin-top: 1px;
-   padding: 30px 0;
-   font-family: 'Roboto', sans-serif;
-   background: #F1F2F6;
-
-}
-
-#cover-image {
-    height: 550px;
-    width: 100%;
-   }
-
-#timeline-title {
-   margin-top: 30px;
-   text-align: center;
-   font-weight: 300;
-   color: #777
-}
-
-#timeline-title span {
-   font-weight: 600;
-}
-
-.container {
-   width: 80%;
-   padding: 50px 0;
-   margin: 30px auto;
-   position: relative;
-   overflow: hidden;
-}
-
-.container:before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 50%;
-   margin-left: -1px;
-   width: 2px;
-   height: 100%;
-   background: #CCD1D9;
-   z-index: 1
-}
-
-.timeline-block {
-   width: -webkit-calc(50% + 8px);
-   width: -moz-calc(50% + 8px);
-   width: calc(50% + 8px);
-   display: -webkit-box;
-   display: -webkit-flex;
-   display: -moz-box;
-   display: flex;
-   -webkit-box-pack: justify;
-   -webkit-justify-content: space-between;
-   -moz-box-pack: justify;
-   justify-content: space-between;
-   clear: both;
-}
-
-.timeline-block-right {
-   float: right;
-}
-
-.timeline-block-left {
-   float: left;
-   direction: rtl
-}
-
-.marker {
-   width: 16px;
-   height: 16px;
-   border-radius: 50%;
-   border: 2px solid #F5F7FA;
-   background: #4FC1E9;
-   margin-top: 10px;
-   z-index: 1
-}
-
-.timeline-content {
-   width: 95%;
-   padding: 0 15px;
-   color: #666
-}
-
-.timeline-content h3 {
-   margin-top: 5px;
-   margin-bottom: 5px;
-   font-size: 25px;
-   font-weight: 500
-}
-
-.timeline-content span {
-   font-size: 15px;
-   color: #8B94A3;
-}
-
-.timeline-content p {
-   font-size: 14px;
-   line-height: 1.5em;
-   word-spacing: 1px;
-   color: #888;
-}
 
 
 @media screen and (max-width: 768px) {
 
   .certs-container {
-  margin-top: 560px;
+  margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
@@ -300,26 +243,10 @@ TIMELINE CSS STARTS HERE
   height: 100%;
 }
 
-   .container:before {
-      left: 8px;
-      width: 2px;
-   }
-   .timeline-block {
-      width: 100%;
-      margin-bottom: 30px;
-   }
-   .timeline-block-right {
-      float: none;
-   }
-
-   .timeline-block-left {
-      float: none;
-      direction: ltr;
-   }
-
    #cover-image {
     height: 550px;
    }
+
 }
 
 
@@ -329,7 +256,84 @@ TIMELINE CSS ENDS HERE
 
 
 /* FOOTER CSS */
+ section {
+            padding: 10px 0;
+           /* min-height: 100vh;*/
+        }
+ ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
 
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    padding-left: 15px; 
+    margin: 0 10px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-menu{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50%;
+  margin-top: 30px;
+}
+
+.footer-menu>h1 {
+  margin-left: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.footer-menu a{
+  text-decoration: none;
+  color: #A3BAC3;
+}
+
+
+section, footer {
+    background: #1A1E25;
+    color: #868c96;
+}
+
+footer p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}
+
+footer a {
+  color: #A3BAC3;
+}
+
+.sm-icon {
+  width: 35px;
+}
 /* FOOTER CSS END */
 
 /* Hamburger menu CSS */

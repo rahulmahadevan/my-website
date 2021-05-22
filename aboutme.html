@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Journey</title>
+	<link rel="stylesheet" type="text/css" href="aboutme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<script type="text/javascript">
+  var scrolls = [];
+
+  /* Hamgurger menu scrolls unexpectedly, this function will get the position of scroll and dynamically set it to the same position, effectively preventing the abrubt scroll */
+  function preventScroll(){
+    var a = $(window).scrollTop();
+    scrolls.push(a);
+    if(scrolls.length === 2){
+      scrolls.pop();
+      var currScroll = scrolls[0];
+      scrolls.pop();
+      $("html").scrollTop(currScroll);
+    }
+  }
+
+</script>
+<body>
+
+
+
+	<div class="hamburger-menu" onclick="preventScroll()">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+    	<li><a class="menu__item" href="index.html" onclick="preventScroll()">Home</a></li>
+      	<li><a class="menu__item" href="#" onclick="preventScroll()">Tech Blogs</a></li>
+         <li><a class="menu__item" href="#" onclick="preventScroll()">Science Blogs</a></li>
+    </ul>
+  </div>
+
+	<div class="timeline">
+		
+      <h1 id="timeline-title"><span>Bachelor of Technology</span> in Information Technology (2016-20)</h1>
+
+<div class="container">
+
+   <div class="timeline-block timeline-block-right">
+     
+     <div class="marker"></div>
+      
+      <div class="timeline-content">
+         <h3>First Year</h3>  
+         <span>Skills acquired: C, C++</span><br><br>
+         
+         <p>Project: <a href="CollegeRadioDoc.pdf" target="_blank" title="View Project Doc">College Radio Automation Program</a> <a href="https://github.com/rahulmahadevan/College-Radio-Automation" aria-label="Homepage" class="footer-octicon" title="View Repo on GitHub" target="_blank">
+    
+
+
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a><br>Description: The RJs of College Radio had routine task of playing National Song at 09:00AM and National Anthem at 04:30PM on a computer connected to the Radio speakers in the campus. Using simple C++ code the tasks were programmed to work by itself. A bell was also added to the program to follow college timings.</p><br>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Second Year</h3>
+         <span>Skills acquired: Java, MySQL, Android Application Development</span><br><br>
+         <p>Project: <a href="https://github.com/rahulmahadevan/Android-ATRI-Attendance.git" aria-label="Homepage" class="footer-octicon" title="View Repo on GitHub" target="_blank">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a> <a href="https://play.google.com/store/apps/details?id=xyz.atriams.atri" target="_blank" title="Get it on GooglePlay">ATRI Attendance Faculty & CR</a><br>Description: A user-friendly app for faculty to take and post daily attendance from app directly to database in server with many useful options to handle everything related to attendance. Followed SDLC and developed by taking continuous feedback from HoDs. Used by 100s of users</p><br>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Third Year</h3>
+         <span>Skills acquired: Software Engineering, Web development, Networking and Security</span><br><br>
+         <p>Project: <a href="https://github.com/rahulmahadevan/Android-Location-Based-Trade-System.git" target="_blank">Location based Trade/E-commerce System</a> <a href="https://github.com/rahulmahadevan/Android-Location-Based-Trade-System.git" aria-label="Homepage" class="footer-octicon" title="View Repo on GitHub" target="_blank">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a><br>Description: The project is based on the idea that every locality has different range of traders that sell almost everything a customer will ever need. This project is aimed to solve problems in most e-commerce systems. This project can be used to help customers find the products they need from the traders in their locality, thereby, helping both to make a trade.
+<br><br>
+Project: <a href="Hackzone-Team-Brogrammers.pdf" target="_blank">Hackathon- A user-friendly website for NGO by Brogrammers</a><a href="https://github.com/rahulmahadevan/Web-Brogrammers-NGO.git" aria-label="Homepage" class="footer-octicon" title="View Repo on GitHub" target="_blank">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a><br>Description: During the 8hrs hackathod, our team was tasked with developing a responsive and user-friendly website for an NGO with some specific requirements. We also added a payment gateway for donations towards NGO as per requirements.
+<br><br>Certification acheived: <a href="https://www.youracclaim.com/badges/a5bf968a-fbaa-4db2-bf4f-48ce6a5f460c/linked_in_profile" target="_blank">Oracle Certified Associate Java SE 8 Programmer</a><br><br>
+
+Organised <a href="#img1">Workshop on Android Application Development</a> for 70 Students
+<a href="#" class="lightbox" id="img1">
+  <span style="background-image: url('workshop.JPG')"></span>
+</a>
+</p><br>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Fourth Year</h3>
+         <span>Skills acquired: Python, Blockchain Architecture Design, Cloud</span><br><br>
+         <p>Project: <a href="https://github.com/rahulmahadevan/Web-Crime-Reporting-System.git" aria-label="Homepage" class="footer-octicon" title="View Repo on GitHub" target="_blank">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a><a href="https://github.com/rahulmahadevan/Web-Crime-Reporting-System.git" target="_blank">Crime Registration System using Chatbot</a><br>Description: The system is a client-server based web application for reporting and viewing crime based information.The chatbot is used to gather crime data from the user and store in the database. The chatbot gives the users a feeling of talking to an actual person and therefore helps in registering crime data efficiently<br><br>
+
+Project: <a href="https://github.com/rahulmahadevan/Web-Poshan-Abhyaan.git" aria-label="Homepage" class="footer-octicon" title="View Repo on GitHub" target="_blank">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a><a href="https://github.com/rahulmahadevan/Web-Poshan-Abhyaan.git" target="_blank">Hackathon- Portal for Holistic Nutrition for Poshan Abhyaan</a><br>Description: The system consists of Health Care Workers, Nutrition Centres and women and children as users. Using this web app, health care workers can view details of all the users and nutrition centres. The default check up for dose is set monthly for every user by Health care worker. Users can check notifications from health care workers, schedule/cancel appointments, view locations of nutrition centres and be notified of upcoming check ups<br><br>Certification achieved: <a href="https://www.youracclaim.com/badges/55e78f35-7027-46d6-8b6f-6db120795e86/linked_in_profile" target="_blank">Oracle Cloud Infrastructure Foundations Certified</a></p>
+      </div>
+   </div>
+</div>
+</div>
+
+    <!-- =============== 1.9 Contact Area End ====================-->
+    <!-- =============== 1.9 Footer Area Start ====================-->
+    <footer>
+        <p>Email me at <a>rahulmahadevanrs@gmail.com</a></p>
+    </footer>
+</body>
+</html>
