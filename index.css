@@ -239,12 +239,14 @@
 }
 
 #quote {
+  width: 100% ;
   font-size: 160%;
 }
 
 .about-me>p{
   font-size: 160%;
 }
+
 
 .cert-img {
   width: 100%;
