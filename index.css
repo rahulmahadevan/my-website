@@ -294,7 +294,7 @@
 .footer-menu{
   display: flex;
   flex-direction: row;
-  margin-left: 50%;
+  margin-left: 60%;
   margin-top: 30px;
 }
 
@@ -334,6 +334,9 @@ footer a {
 /* FOOTER CSS END */
 
 /* Hamburger menu CSS */
+.hamburger-menu {
+  display: none;
+}
 #menu__toggle {
   opacity: 0;
   z-index: 999;

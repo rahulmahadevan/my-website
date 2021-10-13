@@ -1,14 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 #home {
   float: left;
 }
 #home>img {
   width: 40px;
 }
+#page-title {
+   text-align: center;
+   font-family: 'Josefin Sans', sans-serif;
+}
+.titles, .gate-section, .work-section {
+   color: #353C46;
+   text-align: center;
+}
 
+.gate-section, .work-section {
+   margin: 40px;
+}
+.gate-section>h3, .gate-section>h4 {
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 500;
+}
+
+a:link{
+  color:#00008B;
+}
+a:visited{
+  color:#00008B;
+}
+a:hover{
+  color:blue;
+}
+a:focus{
+  color:blue;
+}
+a:active{
+  color:green;
+}
 /*
 TIMELINE CSS STARTS HERE
 */
@@ -137,6 +165,14 @@ TIMELINE CSS STARTS HERE
 
    #cover-image {
     height: 550px;
+   }
+
+   .gate-section {
+      margin: 10px;
+   }
+
+   .gate-section>ul {
+      font-size: 15px;
    }
 }
 
